@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="15px">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:text="EMI Calculator"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/lltxt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:textStyle="bold"
+            android:layout_weight="3"
+            />
+        <EditText
+            android:id="@+id/etxtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lltxt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interest %"
+            android:textStyle="bold"
+            android:layout_weight="3"
+            />
+        <EditText
+            android:id="@+id/etxtIntrest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lltxt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_marginBottom="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Period"
+            android:textStyle="bold"
+            android:layout_weight="3"
+            />
+        <EditText
+            android:id="@+id/etxtTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLBtn"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp">
+        <Button
+            android:id="@+id/btnCal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Calculate">
+        </Button>
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear">
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtRes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_marginBottom="115dp"/>
+</LinearLayout>
